@@ -8,7 +8,7 @@ Feixiaohao API目前只有1个顶级目录。
 
 目录 |  描述  
 :- | :-- 
-[https://fxhapi.feixiaohao.com/public/v1/ticker/*](https://fxhapi.feixiaohao.com/public/v1/ticker) | 返回加密货币数据，如有序加密货币列表或价格和数量数据。
+[https://fxhapi.feixiaohao.co/public/v1/ticker/*](https://fxhapi.feixiaohao.co/public/v1/ticker) | 返回加密货币数据，如有序加密货币列表或价格和数量数据。
 
 ## 快速开始
 
@@ -107,7 +107,7 @@ Feixiaohao API目前只有1个顶级目录。
 
   * **CURL:** <br />
   ```bash
-  curl -H "Accept: application/json" -G "https://fxhapi.feixiaohao.com/public/v1/ticker?limit=5"
+  curl -H "Accept: application/json" -G "https://fxhapi.feixiaohao.co/public/v1/ticker?limit=5"
   ```
   
   * **C#:**<br />
@@ -132,7 +132,7 @@ Feixiaohao API目前只有1个顶级目录。
   
       static string makeAPICall()
       {
-          var URL = new UriBuilder("https://fxhapi.feixiaohao.com/public/v1/ticker");
+          var URL = new UriBuilder("https://fxhapi.feixiaohao.co/public/v1/ticker");
   
           var queryString = System.Web.HttpUtility.ParseQueryString(string.Empty);
           queryString["start"] = "5";
@@ -160,7 +160,7 @@ Feixiaohao API目前只有1个顶级目录。
   public class JavaExample {
   
       public static void main(String[] args) {
-          String uri = "https://fxhapi.feixiaohao.com/public/v1/ticker";
+          String uri = "https://fxhapi.feixiaohao.co/public/v1/ticker";
           List<NameValuePair> paratmers = new ArrayList<NameValuePair>();
           paratmers.add(new BasicNameValuePair("start","5"));
           paratmers.add(new BasicNameValuePair("limit","5"));
@@ -221,7 +221,7 @@ Feixiaohao API目前只有1个顶级目录。
   
   func main() {
       client := &http.Client{}
-      req, err := http.NewRequest("GET","https://fxhapi.feixiaohao.com/public/v1/ticker", nil)
+      req, err := http.NewRequest("GET","https://fxhapi.feixiaohao.co/public/v1/ticker", nil)
       if err != nil {
           log.Print(err)
           os.Exit(1)
